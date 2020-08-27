@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root "users#login_form"
+  root "home#how"
   get 'master/index' => "master#index"
   get 'shift/:id/register' => "shift#register"
   get "shift/:id/check" => "shift#check"
