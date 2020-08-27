@@ -1,17 +1,23 @@
 
 <% path = @current_user.id %>
 
-<% if @current_user.id != 4 %>
 
-   
-    <a href = "/shift/<%=path%>/register"><button type="button" class="btn btn-primary btn-lg">シフト登録・変更</button></a>
-    <a href = "/shift/<%=path%>/check"><button type="button" class="btn btn-primary btn-lg">シフト確認</button></a>
+<% if @current_user.id == 1 %>
+
+    <a href = "/users/all"><button type="button" class="btn btn-primary btn-lg">アカウントの管理</button></a>
+
+<% elsif @current_user.id == 2 %>
+
+    <a href = "/users/index"><button type="button" class="btn btn-primary btn-lg">指導者のシフトの確認</button></a>
     <a href = "/users/<%=path%>/edit"><button type="button" class="btn btn-primary btn-lg">名前・パスワードの変更</button></a>
 
 <% else %>
 
-    <a href = "/users/index"><button type="button" class="btn btn-primary btn-lg">指導者のシフトの確認</button></a>
+
+    <a href = "/shift/<%=path%>/register"><button type="button" class="btn btn-primary btn-lg">シフト登録・変更</button></a>
+    <a href = "/shift/<%=path%>/check"><button type="button" class="btn btn-primary btn-lg">シフト確認</button></a>
     <a href = "/users/<%=path%>/edit"><button type="button" class="btn btn-primary btn-lg">名前・パスワードの変更</button></a>
+
 
 
 <% end %>

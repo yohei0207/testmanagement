@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :forbid_login_user,{only:[:login_form,:login]}
   before_action :ensure_correct_user,{only:[:show,:edit]}
   before_action :check_shift,{only:[:index]}
+  before_action :check_super,{only:[:all,:superedit]}
 
   def index
     @user = User.all
@@ -54,6 +55,39 @@ class UsersController < ApplicationController
       @error_message = "現在のパスワードが違います"
       render("/users/edit")
     end
+  end
+
+  def register
+
+    if params[:password] == params[:password_again]
+      @user = User.new(name:params[:name], password:params[:password])
+      if @user.save
+        flash[:notice] = "アカウントが作成されました"
+        session[:user_id] = @user.id
+        redirect_to("/users/#{@user.id}")
+      else
+        @error_message = "正しく入力してください"
+        redirect_to("/users/signup")
+      end
+
+    else
+      @error_message = "入力されたパスワードが異なります"
+      redirect_to("/users/signup")
+    end
+  end
+
+  def all
+    @users = User.all
+  end
+
+  def superedit
+    @user = User.find_by(id:params[:id])
+  end
+
+  def destroy
+    @user = User.find_by(id:params[:id])
+    @user.destroy
+    redirect_to("/users/all")
   end
 
 end

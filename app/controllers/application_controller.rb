@@ -22,10 +22,19 @@ class ApplicationController < ActionController::Base
     def check_shift
         
         if @current_user.id != params[:id].to_i
-            if @current_user.id != 4
+            if @current_user.id != 2
                 flash[:notice] = "権限がありません"
                 redirect_to("/users/#{@current_user.id}")
             end
+        end
+    end
+
+    def check_super
+        if @current_user.id != 1
+        
+            flash[:notice] = "権限がありません"
+            redirect_to("/users/#{@current_user.id}")
+            
         end
     end
     

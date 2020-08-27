@@ -1,6 +1,6 @@
 <% @user.each do |user|%>
 
-    <% if user.id != 4 %>
+    <% if user.id != 2 %>
         <% @shift = Shift.find_by(user_id: user.id) %>
         
         <% if @shift %>
