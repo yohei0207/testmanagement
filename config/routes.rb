@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
 
-  
+  get "/" => "users#login_form"
   get 'master/index' => "master#index"
   get 'shift/:id/register' => "shift#register"
   get "shift/:id/check" => "shift#check"
   get 'home/how' => "home#how"
   get "home/contact" => "home#contact"
-  get "/" => "users#login_form"
   post "login" => "users#login"
   post "logout" => "users#logout"
   get 'users/index' => "users#index"
