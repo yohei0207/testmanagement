@@ -1,0 +1,15 @@
+<% @user.each do |user|%>
+
+    <% if user.id != 4 %>
+        <% @shift = Shift.find_by(user_id: user.id) %>
+        
+        <% if @shift %>
+            <%= link_to "#{user.name}", "/shift/#{user.id}/check" %>
+            <p>提出済みです(<%= user.updated_at %>)</p>
+        <% else %>
+            <%= user.name %>
+            <p>未提出です</p>
+        <% end %>
+    <% end %>
+
+<% end %>
