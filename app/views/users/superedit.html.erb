@@ -1,2 +1,5 @@
-<% @user.name %>
-<%= link_to "削除", "/users/#{@user.id}/destroy", {method:"post"}%>
+<p><%=@user.name %></p>
+
+<% if !(@user.id == 1 or @user.id == 2)%>
+    <%= link_to "削除", "/users/#{@user.id}/destroy", {method:"post"}%>
+<% end %>

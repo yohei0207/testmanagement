@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  before_action :forbid_login_user,{only:[:login_form,:login]}
+  before_action :forbid_login_user,{only:[:login_form,:login,:new]}
   before_action :ensure_correct_user,{only:[:show,:edit]}
   before_action :check_shift,{only:[:index]}
   before_action :check_super,{only:[:all,:superedit]}
@@ -88,6 +88,9 @@ class UsersController < ApplicationController
     @user = User.find_by(id:params[:id])
     @user.destroy
     redirect_to("/users/all")
+  end
+
+  def new 
   end
 
 end
