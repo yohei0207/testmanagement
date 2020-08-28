@@ -1,9 +1,9 @@
 <% if @shift %>
 
 
-<% user_name = User.find_by(id:@shift.user_id).name%>
+<% user= User.find_by(id:@shift.user_id)%>
 
-<h1><%=user_name%>さんの出講可能日</h1>
+<h1><%=user.name%>さんの出講可能日(<%=@shift.updated_at.strftime("%Y-%m-%d %H:%M")%>更新)</h1>
 
 
 
