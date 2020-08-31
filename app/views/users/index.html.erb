@@ -1,15 +1,39 @@
-<% @user.each do |user|%>
+<table border="1"class="table table-dark">
 
-    <% if user.id != 2 %>
+<thead>
+    <tr bgcolor= "#ff9933">
+        <td>名前</td>
+        <td>シフト</td>
+        <td>更新日</td>
+    </tr>
+</thead>
+
+<% @user.each do |user|%>
+    <tbody>
+    <% if !(user.id == 1 or user.id == 2) %>
         <% @shift = Shift.find_by(user_id: user.id) %>
-        
+
         <% if @shift %>
-            <%= link_to "#{user.name}", "/shift/#{user.id}/check" %>
-            <p>提出済みです(<%= user.updated_at.strftime("%Y-%m-%d %H:%M") %>)</p>
+
+            <tr>
+            <td><%=user.name%></td>
+            <td><%= link_to "提出済み", "/shift/#{user.id}/check" %></td>
+            <td><%= @shift.updated_at.strftime("%Y年%m月%d日 %H時%M分") %></td>
+            </tr>
+
         <% else %>
-            <%= user.name %>
-            <p>未提出です</p>
+
+            <tr>
+            <td><%= user.name %></td>
+            <td>未提出</td>
+            <td>-</td>
+            </tr>
+
         <% end %>
+        
     <% end %>
+    </tbody>
 
 <% end %>
+
+</table>

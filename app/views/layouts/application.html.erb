@@ -2,11 +2,14 @@
 <html>
   <head>
     <title>Management</title>
+    
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+
   </head>
 
   <body>
@@ -22,7 +25,7 @@
         <a class="nav-link" href="/home/how">使い方</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/home/contact">お問い合わせ</a>
+        <a class="nav-link " href="/home/contact">お問い合わせ</a>
       </li>
       <li class="nav-item">
         <%= link_to "ログアウト", "/logout",{method:"post"}%>
@@ -46,6 +49,7 @@
     </ul>
   <% end %>
 
+  
     <% if flash[:notice] %>
       <div class="flash">
         <%= flash[:notice] %>
@@ -54,5 +58,7 @@
 
   
     <%= yield %>
+  
+  
   </body>
 </html>

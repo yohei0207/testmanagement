@@ -17,8 +17,8 @@ class UsersController < ApplicationController
   end
 
   def login 
-    @user = User.find_by(name: params[:name],password: params[:password])
-    if @user
+    @user = User.find_by(name: params[:name])
+    if @user && @user.authenticate(params[:password])
       flash[:notice] = "ログインに成功しました"
       session[:user_id] = @user.id
       redirect_to("/users/#{@user.id}")
@@ -67,12 +67,12 @@ class UsersController < ApplicationController
         redirect_to("/users/#{@user.id}")
       else
         @error_message = "正しく入力してください"
-        redirect_to("/users/signup")
+        render action: :new
       end
 
     else
       @error_message = "入力されたパスワードが異なります"
-      redirect_to("/users/signup")
+      render action: :new
     end
   end
 
