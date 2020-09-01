@@ -106,9 +106,10 @@ class UsersController < ApplicationController
 
   def destroy
     @user = User.find_by(id:params[:id])
-    @user.destroy
     @shift = Shift.find_by(user_id: @user.id)
+    @user.destroy
     @shift.destroy
+
     redirect_to("/users/all")
   end
 
