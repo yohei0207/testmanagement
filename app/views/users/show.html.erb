@@ -9,14 +9,16 @@
 <% elsif @current_user.id == 2 %>
 
     <a href = "/users/index"><button type="button" class="btn btn-primary btn-lg">指導者のシフトの確認</button></a>
-    <a href = "/users/<%=path%>/edit"><button type="button" class="btn btn-primary btn-lg">名前・パスワードの変更</button></a>
+    <a href = "/users/<%=path%>/edit_name"><button type="button" class="btn btn-primary btn-lg">名前の変更</button></a>
+    <a href = "/users/<%=path%>/edit_password"><button type="button" class="btn btn-primary btn-lg">パスワードの変更</button></a>
 
 <% else %>
 
 
-    <a href = "/shift/<%=path%>/register"><button type="button" class="btn btn-primary btn-lg">シフト登録・変更</button></a>
+    <a href = "/shift/<%=path%>/register"><button type="button" class="btn btn-primary btn-lg">シフト登録</button></a>
     <a href = "/shift/<%=path%>/check"><button type="button" class="btn btn-primary btn-lg">シフト確認</button></a>
-    <a href = "/users/<%=path%>/edit"><button type="button" class="btn btn-primary btn-lg">名前・パスワードの変更</button></a>
+    <a href = "/users/<%=path%>/edit_name"><button type="button" class="btn btn-primary btn-lg">名前の変更</button></a>
+    <a href = "/users/<%=path%>/edit_password"><button type="button" class="btn btn-primary btn-lg">パスワードの変更</button></a>
 
 
 

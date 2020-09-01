@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
 
   before_action :forbid_login_user,{only:[:login_form,:login,:new]}
-  before_action :ensure_correct_user,{only:[:show,:edit]}
+  before_action :ensure_correct_user,{only:[:show,:edit_name,:edit_password]}
   before_action :check_shift,{only:[:index]}
   before_action :check_super,{only:[:all,:superedit]}
+
 
   def index
     @user = User.all
@@ -35,17 +36,19 @@ class UsersController < ApplicationController
     redirect_to("/")
   end
 
-  def edit
+  def edit_name
   end
 
-  def update
-    password = params[:password]
-    if password == @current_user.password
+  def edit_password
+  end
+
+
+  def update_password
+    if @current_user.authenticate(params[:password])
       if params[:new_password] != params[:new_password_again]
         @error_message = "新しいパスワードが違います"
-        render("/users/edit")
+        redirect_to("/users/#{@current_user.id}/edit_password")
       else
-        @current_user.name = params[:name]
         @current_user.password = params[:new_password]
         @current_user.save
         flash[:notice] = "変更が完了しました"
@@ -53,9 +56,26 @@ class UsersController < ApplicationController
       end
     else
       @error_message = "現在のパスワードが違います"
-      render("/users/edit")
+      redirect_to("/users/#{@current_user.id}/edit_password")
     end
   end
+
+
+  def update_name
+
+    @current_user.name = params[:name]
+
+    if @current_user.save
+      flash[:notice] = "変更しました"
+      redirect_to("/users/#{@current_user.id}")
+    else
+      @error_message = params[:name]
+      redirect_to("/users/#{@current_user.id}/edit_name")
+    end
+
+
+  end
+
 
   def register
 
