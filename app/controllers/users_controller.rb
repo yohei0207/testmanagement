@@ -81,7 +81,13 @@ class UsersController < ApplicationController
 
     if params[:password] == params[:password_again]
       @user = User.new(name:params[:name], password:params[:password])
-      if @user.save
+
+      @user2 = User.find_by(name:params[:name])
+      if @user2
+        @error_message = "別の名前を用いてください(ごめんなさい)"
+        render action: :new
+
+      elsif @user.save
         flash[:notice] = "アカウントが作成されました"
         session[:user_id] = @user.id
         redirect_to("/users/#{@user.id}")
@@ -108,7 +114,10 @@ class UsersController < ApplicationController
     @user = User.find_by(id:params[:id])
     @shift = Shift.find_by(user_id: @user.id)
     @user.destroy
-    @shift.destroy
+
+    if @shift
+      @shift.destroy
+    end
 
     redirect_to("/users/all")
   end
