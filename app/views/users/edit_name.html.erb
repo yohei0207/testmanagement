@@ -3,14 +3,24 @@
     <%if @error_message%>
             <%=@error_message%>
     <% end %>
-    
-  <div class="form-group">
-    <label for="formGroupExampleInput">新しい名前</label>
-    <input type="text" class="form-control" id="formGroupExampleInput"  name= "name">
-  </div>
+   
   
-  <input type="submit" value="登録">
- 
+
+  <div class = "card">
+    <div class = "card-body">
+    
+    
+      <div class="form-group">
+        <label for="formGroupExampleInput">新しい名前</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" name= "name">
+      </div>
+      
+      <button class = "btn btn-primary b-w">登録</button>
+
+
+    </div>
+  </div>
+
 </form>
 <% end %>
 

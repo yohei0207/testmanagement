@@ -1,5 +1,35 @@
-<% @users.each do |user|%>
 
-    <p><%= link_to "#{user.name}", "/users/#{user.id}/superedit" %></p>
+
+<table border="1"class="table table-dark">
+
+<thead>
+    <tr bgcolor= "#ff9933">
+        <td>名前</td>
+        <td>シフト</td>
+        <td>更新日</td>
+    </tr>
+</thead>
+
+<% @users.each do |user|%>
+    <tbody>
+    <% if !(user.id == 1 or user.id == 2) %>
+        <% @shift = Shift.find_by(user_id: user.id) %>
+
+            <tr>
+            <td><%= link_to "#{user.name}", "/users/#{user.id}/superedit" %></td>
+            <% if @shift %>
+                <td>提出済み</td>
+                <td><%= @shift.updated_at.strftime("%Y年%m月%d日 %H時%M分") %></td>
+            
+            <% else %>
+                <td>未提出</td>
+                <td>-</td>
+            <% end %>
+            </tr>
+        
+    <% end %>
+    </tbody>
 
 <% end %>
+
+</table>

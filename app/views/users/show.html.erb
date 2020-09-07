@@ -4,22 +4,65 @@
 
 <% if @current_user.id == 1 %>
 
-    <a href = "/users/all"><button type="button" class="btn btn-primary btn-lg">アカウントの管理</button></a>
+    <div class = "card">
+    <div class = "card-body">
+    
+      <div class="form-group">
+        <a href = "/users/all"><button type="button" class="btn btn-danger btn-lg b-w">アカウントの管理</button></a>
+      </div>
+
+    </div>
+    </div>
+
 
 <% elsif @current_user.id == 2 %>
 
-    <a href = "/users/index"><button type="button" class="btn btn-primary btn-lg">指導者のシフトの確認</button></a>
-    <a href = "/users/<%=path%>/edit_name"><button type="button" class="btn btn-primary btn-lg">名前の変更</button></a>
-    <a href = "/users/<%=path%>/edit_password"><button type="button" class="btn btn-primary btn-lg">パスワードの変更</button></a>
+    <div class = "card">
+    <div class = "card-body">
+    
+      <div class="form-group">
+        <a href = "/users/index"><button type="button" class="btn btn-primary btn-lg b-w">指導者のシフトの確認</button></a>
+      </div>
+
+      <div class="form-group">
+        <a href = "/users/<%=path%>/edit_name"><button type="button" class="btn btn-success btn-lg b-w">名前の変更</button></a>
+      </div>
+
+      <div class="form-group">
+        <a href = "/users/<%=path%>/edit_password"><button type="button" class="btn btn-success btn-lg b-w">パスワードの変更</button></a>
+      </div>
+
+    </div>
+    </div>
+
 
 <% else %>
 
+    
 
-    <a href = "/shift/<%=path%>/register"><button type="button" class="btn btn-primary btn-lg">シフト登録</button></a>
-    <a href = "/shift/<%=path%>/check"><button type="button" class="btn btn-primary btn-lg">シフト確認</button></a>
-    <a href = "/users/<%=path%>/edit_name"><button type="button" class="btn btn-primary btn-lg">名前の変更</button></a>
-    <a href = "/users/<%=path%>/edit_password"><button type="button" class="btn btn-primary btn-lg">パスワードの変更</button></a>
+  <div class = "card">
+    <div class = "card-body">
+    
+      <div class="form-group">
+        <a href = "/shift/<%=path%>/register"><button type="button" class="btn btn-primary btn-lg b-w">シフト登録・更新</button></a>
+      </div>
 
+      <div class="form-group">
+        <a href = "/shift/<%=path%>/check"><button type="button" class="btn btn-primary btn-lg b-w">提出したシフトの確認</button></a>
+      </div>
+
+      <div class="form-group">
+        <a href = "/users/<%=path%>/edit_name"><button type="button" class="btn btn-success btn-lg b-w">名前の変更</button></a>
+      </div>
+
+       <div class="form-group">
+        <a href = "/users/<%=path%>/edit_password"><button type="button" class="btn btn-success btn-lg b-w">パスワードの変更</button></a>
+      </div>
+     
+
+
+    </div>
+  </div>
 
 
 <% end %>

@@ -27,7 +27,7 @@ class UsersController < ApplicationController
       @error_message = "名前またはパスワードが間違っています"
       @name = params[:name]
       @password = params[:password]
-      render("/users/login_form")
+      render("users/login_form")
     end
   end
 
