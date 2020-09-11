@@ -20,3 +20,9 @@
 body{
     background-color: #f2f2f2;
 }
+
+@media all and (max-width: 670px){
+    .card{
+        height:100vh;
+    }
+}
