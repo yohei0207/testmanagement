@@ -82,7 +82,9 @@ class ShiftController < ApplicationController
     @shift.save
 
     flash[:notice] = "シフトが送信されました"
-    redirect_to("/users/#{@current_user.id}")
+    #redirect_to("/users/#{@current_user.id}")
+    redirect_to("/shift/#{@current_user.id}/second2020s")
+    
   end
 
   def check
