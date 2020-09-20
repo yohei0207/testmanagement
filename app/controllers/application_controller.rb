@@ -12,14 +12,16 @@ class ApplicationController < ActionController::Base
     def forbid_login_user
         if @current_user
             flash[:notice] = "既にログインしています"
-            redirect_to("/users/#{@current_user.id}")
+            #redirect_to("/users/#{@current_user.id}")
+            redirect_to("/home/#{@current_user.id}/shift")
         end
     end
 
     def ensure_correct_user
         if @current_user.id != params[:id].to_i
             flash[:notice] = "権限がありません"
-            redirect_to("/users/#{@current_user.id}")
+            #redirect_to("/users/#{@current_user.id}")
+            redirect_to("/home/#{@current_user.id}/shift")
         end
     end
 
@@ -28,7 +30,8 @@ class ApplicationController < ActionController::Base
         if @current_user.id != params[:id].to_i
             if @current_user.id != 2
                 flash[:notice] = "権限がありません"
-                redirect_to("/users/#{@current_user.id}")
+                #redirect_to("/users/#{@current_user.id}")
+                redirect_to("/home/#{@current_user.id}/shift")
             end
         end
     end
@@ -37,7 +40,8 @@ class ApplicationController < ActionController::Base
         if @current_user.id != 1
         
             flash[:notice] = "権限がありません"
-            redirect_to("/users/#{@current_user.id}")
+            #redirect_to("/users/#{@current_user.id}")
+            redirect_to("/home/#{@current_user.id}/shift")
             
         end
     end

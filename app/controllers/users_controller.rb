@@ -22,7 +22,8 @@ class UsersController < ApplicationController
     if @user && @user.authenticate(params[:password])
       flash[:notice] = "ログインに成功しました"
       session[:user_id] = @user.id
-      redirect_to("/users/#{@user.id}")
+      redirect_to("/home/#{@user.id}/shift")
+      #redirect_to("/users/#{@user.id}")
     else
       @error_message = "名前またはパスワードが間違っています"
       @name = params[:name]

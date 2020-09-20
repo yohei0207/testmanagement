@@ -7,11 +7,11 @@
   <% end %>
 
 
-  <div class = "card">
-    <div class = "card-body">
-    <h1>ログイン</h1>
 
-    
+  <div class="container-fluid man-container">
+ 
+    <h3>ログイン</h3>
+
       <div class="form-group">
         <label for="formGroupExampleInput">名前</label>
         <input type="text" class="form-control" id="formGroupExampleInput" name= "name" value = "<%=@name%>">
@@ -20,14 +20,11 @@
         <label for="formGroupExampleInput2">パスワード</label>
         <input type="password" class="form-control" id="formGroupExampleInput2" name ="password" value = "<%=@password%>">
       </div>
-      <button class = "btn btn-primary b-w">ログイン</button>
+      <button class = "btn btn-primary man-btn w-100">ログイン</button>
 
       <div class = "create">アカウント作成は<a href = "/signup">こちらから</a></div>
 
-    </div>
   </div>
-
-  
   
 </form>
 

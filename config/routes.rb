@@ -4,10 +4,22 @@ Rails.application.routes.draw do
   get "/" => "users#login_form"
   get "signup" => "users#new"
   get 'master/index' => "master#index"
+
+
   get 'shift/:id/register' => "shift#register"
   get "shift/:id/check" => "shift#check"
+
+  get "shift/:id/winter2020s/register" => "shift#winter2020s_register"
+  get "shift/:id/winter2020s/check" => "shift#winter2020s_check"
+
+  get "shift/:id/second2020s" => "shift#second2020s"
+  get "shift/:id/winter2020s" => "shift#winter2020s"
+
+
   get 'home/how' => "home#how"
   get "home/contact" => "home#contact"
+  get "home/:id/change" => "home#change"
+  get "home/:id/shift" => "home#shift"
   
   #get "users/:id/edit" => "users#edit"
   get "users/index" => "users#index"

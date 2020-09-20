@@ -14,8 +14,6 @@
  *= require_self
  */
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
 
 body{
     background-color: #f2f2f2;
@@ -23,5 +21,43 @@ body{
 
 .sub-table{
     width:25%;
+}
+
+.man-container h3{
+    padding-top:20px;
+}
+
+.man-btn{
+    margin:10px 0px;
+    padding:10px 0px;
+}
+
+.man-container{
+    background-color:white;
+    margin-top:10px;
+    padding-bottom:10px;
+}
+
+.form-group label{
+   padding-top:20px
+}
+
+.create{
+    text-align: center;
+    padding-bottom:10px;
+}
+
+.description{
+    width:50%;
+    margin-bottom:10px;
+    padding-bottom:10px;
 
 }
+
+.steps1{
+    background-color:#c0f1cc;
+}
+.steps2{
+    background-color:#D9E5FF;
+}
+

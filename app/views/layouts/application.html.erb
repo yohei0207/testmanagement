@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>シフト提出</title>
     
     <%= csrf_meta_tags %>
@@ -11,13 +17,17 @@
     
 
   </head>
+  
 
   <body>
 
+  
+
   <% if @current_user %>
+
+  
+  <!--
     <ul class="nav nav-tabs">
-
-
       <li class="nav-item">
         <%= link_to "#{@current_user.name}", "/users/#{@current_user.id}"%>
       </li>
@@ -31,12 +41,51 @@
         <%= link_to "ログアウト", "/logout",{method:"post"}%>
       </li>
     </ul>
+    -->
+
+
+      
+  <nav class="navbar navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">シフト提出</a>
+    <button class="navbar-toggler" type="button"
+        data-toggle="collapse"
+        data-target="#navmenu1"
+        aria-controls="navmenu1"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        MENU
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu1">
+      <div class="navbar-nav">
+
+
+        <!--
+        <%= link_to "#{@current_user.name}", "/users/#{@current_user.id}", class:"nav-item nav-link",method: :get%>
+        -->
+        <% if @current_user.id != 2%>
+          <%= link_to "シフト提出", "/home/#{@current_user.id}/shift", class:"nav-item nav-link",method: :get%>
+      
+        <% else %>
+          <%= link_to "指導者のシフトの確認","/home/#{@current_user.id}/shift",class:"nav-item nav-link",method: :get%>
+        <% end %>
+        <%= link_to "名前・パスワードの変更", "/home/#{@current_user.id}/change", class:"nav-item nav-link",method: :get%>
+        <%= link_to "使い方", "/home/how",class:"nav-item nav-link",method: :get%>
+        <%= link_to "お問い合わせ", "/home/contact",class:"nav-item nav-link",method: :get%>
+        <%= link_to "ログアウト", "/logout",class:"nav-item nav-link text-danger",method: :post%>
+
+      </div>
+    </div>
+  </nav>
+
+    
 
     
 
   <% else %>
-    <ul class="nav nav-tabs">
 
+  <!--
+    <ul class="nav nav-tabs">
       <li class="nav-item">
         <a class="nav-link" href="/">ログイン</a>
       </li>
@@ -47,9 +96,36 @@
       <li class="nav-item">
         <a class="nav-link" href="/home/contact">お問い合わせ</a>
       </li>
-     
-      
     </ul>
+  -->
+
+    
+  <nav class="navbar navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">シフト提出</a>
+    <button class="navbar-toggler" type="button"
+        data-toggle="collapse"
+        data-target="#navmenu1"
+        aria-controls="navmenu1"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        MENU
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu1">
+      <div class="navbar-nav">
+
+        <%= link_to "ログイン", "/", class:"nav-item nav-link",method: :get%>
+        <%= link_to "使い方", "/home/how",class:"nav-item nav-link",method: :get%>
+        <%= link_to "お問い合わせ", "/home/contact",class:"nav-item nav-link",method: :get%>
+        <%= link_to "新規登録", "/signup", class:"nav-item nav-link",method: :get%>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
   <% end %>
 
   
@@ -63,5 +139,8 @@
 
   
     <%= yield %>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>

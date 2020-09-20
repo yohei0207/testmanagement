@@ -1,0 +1,16 @@
+<div class="container-fluid man-container">
+
+    <% path = @current_user.id %>
+
+    <% if @current_user.id != 2%>
+    <h3 class="man-btn">シフト提出</h3>
+    <a href="/shift/<%=path%>/second2020s"><button class="btn btn-success w-100 man-btn">2020年度後期</button></a>
+    <a href = "/shift/<%=path%>/winter2020s"><button class="btn btn-danger w-100 man-btn">2020年度冬期講習</button></a>
+
+    <% else %>
+        <h3 class="man-btn">指導者のシフトの確認</h3>
+        <a href="/users/index"><button class="btn btn-success w-100 man-btn">2020年度後期</button></a>
+        <a href = "/shift/<%=path%>/winter2020s"><button class="btn btn-danger w-100 man-btn">2020年度冬期講習</button></a>
+    <% end %>
+
+</div>

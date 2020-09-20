@@ -1,7 +1,24 @@
 class ShiftController < ApplicationController
 
-  before_action :ensure_correct_user,{only:[:update,:register]}
-  before_action :check_shift,{only:[:check]}
+  before_action :ensure_correct_user,{only:[:update,:register,:second2020s,:winter2020s,:winter2020s_register]}
+
+  #before_action :ensure_correct_user,{only:[:winter2020s,:winter2020s_register]}
+  before_action :check_shift,{only:[:winter2020s_check,:check]}
+
+
+
+
+  def second2020s
+  end
+
+  def winter2020s
+  end
+
+  def winter2020s_register
+  end
+
+  def winter2020s_check
+  end
 
   def register
   end
