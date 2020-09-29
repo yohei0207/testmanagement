@@ -16,11 +16,14 @@ Rails.application.routes.draw do
   get "shift/:id/winter2020s" => "shift#winter2020s"
 
 
+
+
   get 'home/how' => "home#how"
   get "home/contact" => "home#contact"
   get "home/:id/change" => "home#change"
   get "home/:id/shift" => "home#shift"
-  
+
+
   #get "users/:id/edit" => "users#edit"
   get "users/index" => "users#index"
   get "users/:id" => "users#show"

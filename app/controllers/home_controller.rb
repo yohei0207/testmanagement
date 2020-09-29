@@ -14,5 +14,4 @@ class HomeController < ApplicationController
   def shift
   end
 
-
 end
