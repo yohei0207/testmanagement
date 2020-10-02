@@ -3,21 +3,20 @@
       
  <div class = "container-fluid man-container">
 
-
- <h3 id = "username"><%=@current_user.name%>さんの出講登録</h3>
+  <input type="text" id = "user_name">
   
     
-  <table border=5 class="man-table" id="tablea">
+  <table border=3 class="man-table" id="tablea">
 
 
     <thead>
     <tr>
       <td></td>
-      <td>12/18(金)</td>
-      <td>12/19(土)</td>
-      <td>12/21(月)</td>
-      <td>12/22(火)</td>
-      <td>12/23(水)</td>
+      <td class="place">12/18(金)</td>
+      <td class="place" bgcolor="#ccffff">12/19(土)</td>
+      <td class="place">12/21(月)</td>
+      <td class="place">12/22(火)</td>
+      <td class="place">12/23(水)</td>
    
      
     </tr>
@@ -35,7 +34,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1219" id ="target12">
             <option value="      ×      ">×</option>
@@ -91,7 +90,7 @@
 
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select  name="s2_1219" id ="target22">
             <option value="      ×      ">×</option>
@@ -150,7 +149,7 @@
 
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select  name="s3_1219" id ="target32">
             <option value="      ×      ">×</option>
@@ -205,7 +204,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1219" id ="target42">
             <option value="      ×      ">×</option>
@@ -260,7 +259,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1219" id ="target52">
             <option value="      ×      ">×</option>
@@ -315,7 +314,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1219" id ="target62">
             <option value="      ×      ">×</option>
@@ -370,7 +369,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1219" id ="target72">
             <option value="      ×      ">×</option>
@@ -425,7 +424,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1219" id ="target82">
             <option value="      ×      ">×</option>
@@ -468,23 +467,32 @@
 
     </tr>
 
+    <tr>
+      <td></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1218()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1219()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1221()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1222()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1223()"></td>
+    </tr>
+
     </tbody>
 
   </table>
 
 
   
-  <table border=5 class="man-table" id="tableb">
+  <table border=3 class="man-table" id="tableb">
 
   
     <thead>
     <tr>
       <td></td>
-      <td>12/24(木)</td>
-      <td>12/25(金)</td>
-      <td>12/26(土)</td>
-      <td>12/28(月)</td>
-      <td>12/29(火)</td>
+      <td class="place">12/24(木)</td>
+      <td class="place">12/25(金)</td>
+      <td class="place" bgcolor="#ccffff">12/26(土)</td>
+      <td class="place" bgcolor="#ffc7af">12/27(日)</td>
+      <td class="place">12/28(月)</td>
    
      
     </tr>
@@ -513,7 +521,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="target18">
             <option value="      ×      ">×</option>
@@ -522,7 +530,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="target19">
             <option value="      ×      ">×</option>
@@ -569,7 +577,7 @@
        
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select  name="s2_1220" id ="target28">
             <option value="      ×      ">×</option>
@@ -580,7 +588,7 @@
       </td>
 
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select  name="s2_1221" id ="target29">
             <option value="      ×      ">×</option>
@@ -628,7 +636,7 @@
         
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select  name="s3_1220" id ="target38">
             <option value="      ×      ">×</option>
@@ -638,7 +646,7 @@
         
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select  name="s3_1221"id ="target39">
             <option value="      ×      ">×</option>
@@ -683,7 +691,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="target48">
             <option value="      ×      ">×</option>
@@ -692,7 +700,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="target49">
             <option value="      ×      ">×</option>
@@ -738,7 +746,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="target58">
             <option value="      ×      ">×</option>
@@ -747,7 +755,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="target59">
             <option value="      ×      ">×</option>
@@ -793,7 +801,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="target68">
             <option value="      ×      ">×</option>
@@ -802,7 +810,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="target69">
             <option value="      ×      ">×</option>
@@ -848,7 +856,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="target78">
             <option value="      ×      ">×</option>
@@ -857,7 +865,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="target79">
             <option value="      ×      ">×</option>
@@ -903,7 +911,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="target88">
             <option value="      ×      ">×</option>
@@ -912,7 +920,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="target89">
             <option value="      ×      ">×</option>
@@ -936,21 +944,30 @@
 
     </tr>
 
+    <tr>
+      <td></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1224()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1225()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1226()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1227()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1228()"></td>
+    </tr>
+
     </tbody>
 
   </table>
 
-  <table border=5 class="man-table" id="tablec">
+  <table border=3 class="man-table" id="tablec">
 
   
     <thead>
     <tr>
       <td></td>
-      <td>12/30(水)</td>
-      <td>12/31(木)</td>
-      <td>1/1(金)</td>
-      <td>1/2(土)</td>
-      <td>1/4(月)</td>
+      <td class="place">12/29(火)</td>
+      <td class="place">12/30(水)</td>
+      <td class="place" bgcolor="#ccffff">1/2(土)</td>
+      <td class="place" bgcolor="#ffc7af">1/3(日)</td>
+      <td class="place">1/4(月)</td>
    
      
     </tr>
@@ -979,7 +996,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="targets13">
             <option value="      ×      ">×</option>
@@ -988,7 +1005,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="targets14">
             <option value="      ×      ">×</option>
@@ -1035,7 +1052,7 @@
        
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select  name="s2_1220" id ="targets23">
             <option value="      ×      ">×</option>
@@ -1046,7 +1063,7 @@
       </td>
 
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select  name="s2_1221" id ="targets24">
             <option value="      ×      ">×</option>
@@ -1094,7 +1111,7 @@
         
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select  name="s3_1220" id ="targets33">
             <option value="      ×      ">×</option>
@@ -1104,7 +1121,7 @@
         
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select  name="s3_1221"id ="targets34">
             <option value="      ×      ">×</option>
@@ -1149,7 +1166,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="targets43">
             <option value="      ×      ">×</option>
@@ -1158,7 +1175,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="targets44">
             <option value="      ×      ">×</option>
@@ -1204,7 +1221,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="targets53">
             <option value="      ×      ">×</option>
@@ -1213,7 +1230,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="targets54">
             <option value="      ×      ">×</option>
@@ -1259,7 +1276,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="targets63">
             <option value="      ×      ">×</option>
@@ -1268,7 +1285,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="targets64">
             <option value="      ×      ">×</option>
@@ -1314,7 +1331,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="targets73">
             <option value="      ×      ">×</option>
@@ -1323,7 +1340,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="targets74">
             <option value="      ×      ">×</option>
@@ -1369,7 +1386,7 @@
       
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#eeffff">
         
           <select name="s1_1220" id ="targets83">
             <option value="      ×      ">×</option>
@@ -1378,7 +1395,7 @@
           </select>
       </td>
 
-      <td class="place">
+      <td class="place" bgcolor="#ffdbc9">
         
           <select name="s1_1221" id ="targets84">
             <option value="      ×      ">×</option>
@@ -1402,20 +1419,30 @@
 
     </tr>
 
+
+    <tr>
+      <td></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1229()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru1230()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru0102()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru0103()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru0104()"></td>
+    </tr>
+
     </tbody>
 
   </table>
 
   
-  <table border=5 class="man-table" id="tabled">
+  <table border=3 class="man-table" id="tabled">
 
   
     <thead>
     <tr>
       <td></td>
-      <td>1/5(火)</td>
-      <td>1/6(水)</td>
-      <td>1/7(木)</td>
+      <td class="place">1/5(火)</td>
+      <td class="place">1/6(水)</td>
+      <td class="place">1/7(木)</td>
    
      
     </tr>
@@ -1708,12 +1735,20 @@
 
     </tr>
 
+    <tr>
+      <td></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru0105()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru0106()"></td>
+      <td class="place"><input type="button" value="All〇" onclick="maru0107()"></td>
+    </tr>
+
     </tbody>
 
   </table>
 
 
-  <b><a id="download" href="#" download="shift.csv" onclick="shiftDownload()">csvファイルダウンロード</a></b>
+
+  <a id="download" href="/shift.csv" download="shift.csv" onclick="shiftDownload()">csvファイルダウンロード</a>
 
 
 
@@ -1728,26 +1763,6 @@
   </div>
 
   <script>
-    //ここから表の行追加のコード
-    function add_line() {
-        for(var i = 0; i < document.getElementsByName("table1_cell_value").length; i++){
-            if(document.getElementsByName("table1_cell_value")[i].value ==""){
-                alert("未入力項目があります。");
-                return false;
-            }
-        }
-
-        var table = document.getElementById('table1');//id=table1という要素を取得
-        var row = table.insertRow(-1);//id=table1の中にtrタグを最後の子要素として追加
-        var cells = new Array();
-        for(var i = 0; i < table.rows[0].cells.length; i++){
-            cells[i] = row.insertCell(-1);//新しく作ったrowの中にtrタグを最後の子要素として追加
-            cells[i].innerText=document.getElementsByName("table1_cell_value")[i].value;
-            document.getElementsByName("table1_cell_value")[i].value="";//入力フィールドの初期化
-        }
-    }
-    //ここまで表の列追加のコード
-
     //ここからCSV出力＆ダウンロード
     function handleDownload() {
         var bom = new Uint8Array([0xEF, 0xBB, 0xBF]);//文字コードをBOM付きUTF-8に指定
@@ -1780,25 +1795,19 @@
       var tablec = document.getElementById('tablec');
       var tabled = document.getElementById('tabled');
       var data_csv="";
-      var user_name = document.getElementById('username');
+      var un = document.getElementById("user_name").value;
+
+    data_csv += "\n";
+
+      data_csv += un;
+      data_csv += "さんの可能日調査"
 
       data_csv += "\n";
-      data_csv += user_name.innerText;
-      data_csv +="\n";
-      data_csv +="\n";
-
+      data_csv += "\n";
+     
 
      
 
-/*
-      for(var i = 0;  i < table.rows.length; i++){
-          for(var j = 0; j < table.rows[i].cells.length; j++){
-            data_csv += table.rows[i].cells[j].innerText;//HTML中の表のセル値をdata_csvに格納
-            if(j == table.rows[i].cells.length-1) data_csv += "\n";//行終わりに改行コードを追加
-            else data_csv += ",";//セル値の区切り文字として,を追加
-          }
-        }
-        */
 
         for(var i = 0; i < 9; i++){
           for(var j = 0; j < 11; j++){
@@ -1818,14 +1827,14 @@
             else if (j == 0){
               //data_csv += table.rows[i].cells[j].innerText;
              
-              if(i==1) data_csv += "8:20~9:30"
-              else if(i==2) data_csv += "9:40~10:50";
-              else if(i==3) data_csv += "11:00~12:10";
-              else if(i==4) data_csv += "12:20~13:10";
-              else if(i==5) data_csv += "14:10~15:20";
-              else if(i==6) data_csv += "15:30~16:40";
-              else if(i==7) data_csv += "16:50~18:00";
-              else if(i==8) data_csv += "18:10~19:20";
+              if(i==1) data_csv += "8:20～9:30"
+              else if(i==2) data_csv += "9:40～10:50";
+              else if(i==3) data_csv += "11:00～12:10";
+              else if(i==4) data_csv += "12:20～13:10";
+              else if(i==5) data_csv += "14:10～15:20";
+              else if(i==6) data_csv += "15:30～16:40";
+              else if(i==7) data_csv += "16:50～18:00";
+              else if(i==8) data_csv += "18:10～19:20";
               data_csv += ",";
               data_csv += ",";
              
@@ -1865,14 +1874,14 @@
             else if (j == 0){
 
 
-              if(i==1) data_csv += "8:20~9:30"
-              else if(i==2) data_csv += "9:40~10:50";
-              else if(i==3) data_csv += "11:00~12:10";
-              else if(i==4) data_csv += "12:20~13:10";
-              else if(i==5) data_csv += "14:10~15:20";
-              else if(i==6) data_csv += "15:30~16:40";
-              else if(i==7) data_csv += "16:50~18:00";
-              else if(i==8) data_csv += "18:10~19:20";
+              if(i==1) data_csv += "8:20～9:30"
+              else if(i==2) data_csv += "9:40～10:50";
+              else if(i==3) data_csv += "11:00～12:10";
+              else if(i==4) data_csv += "12:20～13:10";
+              else if(i==5) data_csv += "14:10～15:20";
+              else if(i==6) data_csv += "15:30～16:40";
+              else if(i==7) data_csv += "16:50～18:00";
+              else if(i==8) data_csv += "18:10～19:20";
               data_csv += ",";
               data_csv += ",";
             }
@@ -1889,9 +1898,23 @@
             }
           }
         }
+
         
 
 
+        if(!un){
+          alert("名前が未入力です。名前を入力してもう一度ダウンロードしてください。");
+        }
+
+        
+
+
+
+     
+        
+
+
+        
         var blob = new Blob([ bom, data_csv], { "type" : "text/csv" });//data_csvのデータをcsvとしてダウンロードする関数
         if (window.navigator.msSaveBlob) { //IEの場合の処理
             window.navigator.msSaveBlob(blob, "shift.csv"); 
@@ -1901,11 +1924,597 @@
         }
 
         delete data_csv;//data_csvオブジェクトはもういらないので消去してメモリを開放
-
+      
+       
 
     }
 
     //ここまでCSV出力＆ダウンロード
+  
+    function maru1218(){
+      var t1 = document.getElementById("target11");
+      var t2 = document.getElementById("target21");
+      var t3 = document.getElementById("target31");
+      var t4 = document.getElementById("target41");
+      var t5 = document.getElementById("target51");
+      var t6 = document.getElementById("target61");
+      var t7 = document.getElementById("target71");
+      var t8 = document.getElementById("target81");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    
+    function maru1219(){
+      var t1 = document.getElementById("target12");
+      var t2 = document.getElementById("target22");
+      var t3 = document.getElementById("target32");
+      var t4 = document.getElementById("target42");
+      var t5 = document.getElementById("target52");
+      var t6 = document.getElementById("target62");
+      var t7 = document.getElementById("target72");
+      var t8 = document.getElementById("target82");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+    }
+
+    
+    function maru1221(){
+      var t1 = document.getElementById("target13");
+      var t2 = document.getElementById("target23");
+      var t3 = document.getElementById("target33");
+      var t4 = document.getElementById("target43");
+      var t5 = document.getElementById("target53");
+      var t6 = document.getElementById("target63");
+      var t7 = document.getElementById("target73");
+      var t8 = document.getElementById("target83");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    
+    function maru1222(){
+      var t1 = document.getElementById("target14");
+      var t2 = document.getElementById("target24");
+      var t3 = document.getElementById("target34");
+      var t4 = document.getElementById("target44");
+      var t5 = document.getElementById("target54");
+      var t6 = document.getElementById("target64");
+      var t7 = document.getElementById("target74");
+      var t8 = document.getElementById("target84");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    
+    function maru1223(){
+      var t1 = document.getElementById("target15");
+      var t2 = document.getElementById("target25");
+      var t3 = document.getElementById("target35");
+      var t4 = document.getElementById("target45");
+      var t5 = document.getElementById("target55");
+      var t6 = document.getElementById("target65");
+      var t7 = document.getElementById("target75");
+      var t8 = document.getElementById("target85");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    
+    function maru1224(){
+      var t1 = document.getElementById("target16");
+      var t2 = document.getElementById("target26");
+      var t3 = document.getElementById("target36");
+      var t4 = document.getElementById("target46");
+      var t5 = document.getElementById("target56");
+      var t6 = document.getElementById("target66");
+      var t7 = document.getElementById("target76");
+      var t8 = document.getElementById("target86");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    
+    function maru1225(){
+      var t1 = document.getElementById("target17");
+      var t2 = document.getElementById("target27");
+      var t3 = document.getElementById("target37");
+      var t4 = document.getElementById("target47");
+      var t5 = document.getElementById("target57");
+      var t6 = document.getElementById("target67");
+      var t7 = document.getElementById("target77");
+      var t8 = document.getElementById("target87");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    
+    function maru1226(){
+      var t1 = document.getElementById("target18");
+      var t2 = document.getElementById("target28");
+      var t3 = document.getElementById("target38");
+      var t4 = document.getElementById("target48");
+      var t5 = document.getElementById("target58");
+      var t6 = document.getElementById("target68");
+      var t7 = document.getElementById("target78");
+      var t8 = document.getElementById("target88");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    
+    function maru1227(){
+      var t1 = document.getElementById("target19");
+      var t2 = document.getElementById("target29");
+      var t3 = document.getElementById("target39");
+      var t4 = document.getElementById("target49");
+      var t5 = document.getElementById("target59");
+      var t6 = document.getElementById("target69");
+      var t7 = document.getElementById("target79");
+      var t8 = document.getElementById("target89");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    
+    function maru1228(){
+      var t1 = document.getElementById("target110");
+      var t2 = document.getElementById("target210");
+      var t3 = document.getElementById("target310");
+      var t4 = document.getElementById("target410");
+      var t5 = document.getElementById("target510");
+      var t6 = document.getElementById("target610");
+      var t7 = document.getElementById("target710");
+      var t8 = document.getElementById("target810");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    
+    function maru1229(){
+      var t1 = document.getElementById("targets11");
+      var t2 = document.getElementById("targets21");
+      var t3 = document.getElementById("targets31");
+      var t4 = document.getElementById("targets41");
+      var t5 = document.getElementById("targets51");
+      var t6 = document.getElementById("targets61");
+      var t7 = document.getElementById("targets71");
+      var t8 = document.getElementById("targets81");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    function maru1230(){
+      var t1 = document.getElementById("targets12");
+      var t2 = document.getElementById("targets22");
+      var t3 = document.getElementById("targets32");
+      var t4 = document.getElementById("targets42");
+      var t5 = document.getElementById("targets52");
+      var t6 = document.getElementById("targets62");
+      var t7 = document.getElementById("targets72");
+      var t8 = document.getElementById("targets82");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    function maru0102(){
+      var t1 = document.getElementById("targets13");
+      var t2 = document.getElementById("targets23");
+      var t3 = document.getElementById("targets33");
+      var t4 = document.getElementById("targets43");
+      var t5 = document.getElementById("targets53");
+      var t6 = document.getElementById("targets63");
+      var t7 = document.getElementById("targets73");
+      var t8 = document.getElementById("targets83");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    function maru0103(){
+      var t1 = document.getElementById("targets14");
+      var t2 = document.getElementById("targets24");
+      var t3 = document.getElementById("targets34");
+      var t4 = document.getElementById("targets44");
+      var t5 = document.getElementById("targets54");
+      var t6 = document.getElementById("targets64");
+      var t7 = document.getElementById("targets74");
+      var t8 = document.getElementById("targets84");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    function maru0104(){
+      var t1 = document.getElementById("targets15");
+      var t2 = document.getElementById("targets25");
+      var t3 = document.getElementById("targets35");
+      var t4 = document.getElementById("targets45");
+      var t5 = document.getElementById("targets55");
+      var t6 = document.getElementById("targets65");
+      var t7 = document.getElementById("targets75");
+      var t8 = document.getElementById("targets85");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    function maru0105(){
+      var t1 = document.getElementById("targets16");
+      var t2 = document.getElementById("targets26");
+      var t3 = document.getElementById("targets36");
+      var t4 = document.getElementById("targets46");
+      var t5 = document.getElementById("targets56");
+      var t6 = document.getElementById("targets66");
+      var t7 = document.getElementById("targets76");
+      var t8 = document.getElementById("targets86");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    function maru0106(){
+      var t1 = document.getElementById("targets17");
+      var t2 = document.getElementById("targets27");
+      var t3 = document.getElementById("targets37");
+      var t4 = document.getElementById("targets47");
+      var t5 = document.getElementById("targets57");
+      var t6 = document.getElementById("targets67");
+      var t7 = document.getElementById("targets77");
+      var t8 = document.getElementById("targets87");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+    function maru0107(){
+      var t1 = document.getElementById("targets18");
+      var t2 = document.getElementById("targets28");
+      var t3 = document.getElementById("targets38");
+      var t4 = document.getElementById("targets48");
+      var t5 = document.getElementById("targets58");
+      var t6 = document.getElementById("targets68");
+      var t7 = document.getElementById("targets78");
+      var t8 = document.getElementById("targets88");
+
+      var ts1 = t1.options;
+      var ts2 = t2.options;
+      var ts3 = t3.options;
+      var ts4 = t4.options;
+      var ts5 = t5.options;
+      var ts6 = t6.options;
+      var ts7 = t7.options;
+      var ts8 = t8.options;
+
+      ts1[1].selected = true;
+      ts2[1].selected = true;
+      ts3[1].selected = true;
+      ts4[1].selected = true;
+      ts5[1].selected = true;
+      ts6[1].selected = true;
+      ts7[1].selected = true;
+      ts8[1].selected = true;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
   </body>
 </html>
