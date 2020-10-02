@@ -15,6 +15,7 @@ class ShiftController < ApplicationController
   end
 
   def winter2020s_register
+    @user = User.find_by(id:@current_user.id);
   end
 
   def winter2020s_check

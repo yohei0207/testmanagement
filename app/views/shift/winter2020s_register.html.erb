@@ -1,73 +1,65 @@
 
-<!--
-<div class="container-fluid man-container">
-<table class="table table-bordered">
 
-    
-
-</table>
-</div>
--->
-
-<!--
       
  <div class = "container-fluid man-container">
+
+
+ <h3 id = "username"><%=@current_user.name%>さんの出講登録</h3>
   
     
-  <table border=5 class="man-table">
+  <table border=5 class="man-table" id="tablea">
+
+
     <thead>
     <tr>
       <td></td>
       <td>12/18(金)</td>
       <td>12/19(土)</td>
-      <td>12/20(日)</td>
-      <td>12/21(日)</td>
-      <td>12/22(月)</td>
-      
-   
+      <td>12/21(月)</td>
+      <td>12/22(火)</td>
+      <td>12/23(水)</td>
    
      
     </tr>
   </thead>
-
   <tbody>
     <tr>
       <td class="place" scope="row">①</td>
       <td class="place">
 
-          <select name="s1_1218">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select name="s1_1218" id ="target11">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
       
       </td>
 
       <td class="place">
         
-          <select name="s1_1219">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select name="s1_1219" id ="target12">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
       
       </td>
 
       <td class="place">
         
-          <select name="s1_1220">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select name="s1_1220" id ="target13">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
       </td>
 
       <td class="place">
         
-          <select name="s1_1221">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select name="s1_1221" id ="target14">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
        
       </td>
@@ -75,10 +67,10 @@
 
       <td class="place">
         
-          <select name="s1_1222">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select name="s1_1222" id ="target15">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
         
       </td>
@@ -90,10 +82,10 @@
       <td class="place">②</td>
       <td class="place">
         
-          <select  name="s2_1218">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select  name="s2_1218" id ="target21">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
        
 
@@ -101,20 +93,20 @@
 
       <td class="place">
         
-          <select  name="s2_1219">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select  name="s2_1219" id ="target22">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
        
       </td>
 
       <td class="place">
         
-          <select  name="s2_1220">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select  name="s2_1220" id ="target23">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
        
       </td>
@@ -122,10 +114,10 @@
 
       <td class="place">
         
-          <select  name="s2_1221">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select  name="s2_1221" id ="target24">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
         
       </td>
@@ -133,10 +125,10 @@
 
       <td class="place">
         
-          <select  name="s2_1222">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select  name="s2_1222" id ="target25">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
         
       </td>
@@ -144,16 +136,15 @@
 
     </tr>
 
-    
     <tr>
       <td class="place">③</td>
 
       <td class="place">
         
-          <select  name="s3_1218">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select  name="s3_1218" id ="target31">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
        
 
@@ -161,40 +152,40 @@
 
       <td class="place">
         
-          <select  name="s3_1219">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select  name="s3_1219" id ="target32">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
         
       </td>
 
       <td class="place">
         
-          <select  name="s3_1220">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select  name="s3_1220" id ="target33">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
         
       </td>
 
       <td class="place">
         
-          <select  name="s3_1221">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select  name="s3_1221"id ="target34">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
         
       </td>
 
       <td class="place">
         
-          <select  name="s3_1222">
-            <option value=3>×</option>
-            <option value=1>〇</option>
-            <option value=2>△</option>
+          <select  name="s3_1222" id ="target35">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
           </select>
         
       </td>
@@ -202,15 +193,1527 @@
       
     </tr>
 
+     <tr>
+      <td class="place" scope="row">④</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="target41">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="target42">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="target43">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="target44">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
 
 
+      <td class="place">
+        
+          <select name="s1_1222" id ="target45">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
 
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑤</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="target51">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="target52">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="target53">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="target54">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="target55">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑥</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="target61">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="target62">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="target63">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="target64">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="target65">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑦</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="target71">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="target72">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="target73">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="target74">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="target75">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑧</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="target81">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="target82">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="target83">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="target84">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="target85">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
 
     </tbody>
 
-
-   
   </table>
+
+
+  
+  <table border=5 class="man-table" id="tableb">
+
+  
+    <thead>
+    <tr>
+      <td></td>
+      <td>12/24(木)</td>
+      <td>12/25(金)</td>
+      <td>12/26(土)</td>
+      <td>12/28(月)</td>
+      <td>12/29(火)</td>
+   
+     
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td class="place" scope="row">①</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="target16">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="target17">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="target18">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="target19">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="target110">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+    <tr>
+      <td class="place">②</td>
+      <td class="place">
+        
+          <select  name="s2_1218" id ="target26">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+
+      </td>
+
+      <td class="place">
+        
+          <select  name="s2_1219" id ="target27">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+      <td class="place">
+        
+          <select  name="s2_1220" id ="target28">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select  name="s2_1221" id ="target29">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+      <td class="place">
+        
+          <select  name="s2_1222" id ="target210">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+    <tr>
+      <td class="place">③</td>
+
+      <td class="place">
+        
+          <select  name="s3_1218" id ="target36">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+
+      </td>
+
+      <td class="place">
+        
+          <select  name="s3_1219" id ="target37">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+      <td class="place">
+        
+          <select  name="s3_1220" id ="target38">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+      <td class="place">
+        
+          <select  name="s3_1221"id ="target39">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+      <td class="place">
+        
+          <select  name="s3_1222" id ="target310">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+      
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">④</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="target46">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="target47">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="target48">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="target49">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="target410">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑤</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="target56">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="target57">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="target58">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="target59">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="target510">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑥</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="target66">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="target67">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="target68">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="target69">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="target610">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑦</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="target76">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="target77">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="target78">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="target79">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="target710">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑧</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="target86">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="target87">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="target88">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="target89">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="target810">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+    </tbody>
+
+  </table>
+
+  <table border=5 class="man-table" id="tablec">
+
+  
+    <thead>
+    <tr>
+      <td></td>
+      <td>12/30(水)</td>
+      <td>12/31(木)</td>
+      <td>1/1(金)</td>
+      <td>1/2(土)</td>
+      <td>1/4(月)</td>
+   
+     
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td class="place" scope="row">①</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets11">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets12">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets13">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="targets14">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="targets15">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+    <tr>
+      <td class="place">②</td>
+      <td class="place">
+        
+          <select  name="s2_1218" id ="targets21">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+
+      </td>
+
+      <td class="place">
+        
+          <select  name="s2_1219" id ="targets22">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+      <td class="place">
+        
+          <select  name="s2_1220" id ="targets23">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select  name="s2_1221" id ="targets24">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+      <td class="place">
+        
+          <select  name="s2_1222" id ="targets25">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+    <tr>
+      <td class="place">③</td>
+
+      <td class="place">
+        
+          <select  name="s3_1218" id ="targets31">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+
+      </td>
+
+      <td class="place">
+        
+          <select  name="s3_1219" id ="targets32">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+      <td class="place">
+        
+          <select  name="s3_1220" id ="targets33">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+      <td class="place">
+        
+          <select  name="s3_1221"id ="targets34">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+      <td class="place">
+        
+          <select  name="s3_1222" id ="targets35">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+      
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">④</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets41">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets42">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets43">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="targets44">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="targets45">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑤</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets51">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets52">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets53">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="targets54">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="targets55">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑥</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets61">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets62">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets63">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="targets64">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="targets65">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑦</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets71">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets72">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets73">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="targets74">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="targets75">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑧</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets81">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets82">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets83">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1221" id ="targets84">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+      <td class="place">
+        
+          <select name="s1_1222" id ="targets85">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+
+    </tr>
+
+    </tbody>
+
+  </table>
+
+  
+  <table border=5 class="man-table" id="tabled">
+
+  
+    <thead>
+    <tr>
+      <td></td>
+      <td>1/5(火)</td>
+      <td>1/6(水)</td>
+      <td>1/7(木)</td>
+   
+     
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td class="place" scope="row">①</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets16">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets17">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets18">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+    
+
+    </tr>
+
+    <tr>
+      <td class="place">②</td>
+      <td class="place">
+        
+          <select  name="s2_1218" id ="targets26">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+
+      </td>
+
+      <td class="place">
+        
+          <select  name="s2_1219" id ="targets27">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+      <td class="place">
+        
+          <select  name="s2_1220" id ="targets28">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+      </td>
+
+
+
+    </tr>
+
+    <tr>
+      <td class="place">③</td>
+
+      <td class="place">
+        
+          <select  name="s3_1218" id ="targets36">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+       
+
+      </td>
+
+      <td class="place">
+        
+          <select  name="s3_1219" id ="targets37">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+      <td class="place">
+        
+          <select  name="s3_1220" id ="targets38">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+        
+      </td>
+
+     
+
+      
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">④</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets46">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets47">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets48">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑤</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets56">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets57">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets58">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+     
+
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑥</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets66">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets67">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets68">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑦</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets76">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets77">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets78">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+      
+
+    </tr>
+
+     <tr>
+      <td class="place" scope="row">⑧</td>
+      <td class="place">
+
+          <select name="s1_1218" id ="targets86">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1219" id ="targets87">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      
+      </td>
+
+      <td class="place">
+        
+          <select name="s1_1220" id ="targets88">
+            <option value="      ×      ">×</option>
+            <option value="      〇      ">〇</option>
+            <option value="      △      ">△</option>
+          </select>
+      </td>
+
+
+
+    </tr>
+
+    </tbody>
+
+  </table>
+
+
+  <b><a id="download" href="#" download="shift.csv" onclick="shiftDownload()">csvファイルダウンロード</a></b>
 
 
 
@@ -223,186 +1726,6 @@
 
       
   </div>
-
-  -->
-
-  index.html
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <style type="text/css">
-        @charset "UTF-8";
-        /* ========BASIC======== */
-        html {
-        overflow-y:scroll;
-        }
-
-        body {
-        margin:0;
-        padding:0;
-        line-height:1.6;
-        letter-spacing:1px;
-        font-family:Verdana, Helvetica, sans-serif;
-        font-size:12px;
-        color:#333;
-        background:#fff;
-        }
-
-        br {
-        letter-spacing:normal;
-        }
-
-        a {
-        color:#0089a1;
-        text-decoration:none;
-        }
-
-        a:hover {
-        color:#0089a1;
-        text-decoration:underline;
-        }
-
-        img {
-        border:0;
-        vertical-align:bottom;
-        }
-
-        h1,h2,h3,h4,h5,h6 {
-        margin:0;
-        }
-
-
-        /* ========TEMPLATE LAYOUT======== */
-        #top {
-        width:780px;
-        margin:10px auto;
-        border:1px solid #333;
-        }
-
-        #header {
-        width:780px;
-        }
-
-        #contents {
-        clear:both;
-        }
-
-        #main {
-        float:left;
-        width:540px;
-        padding:10px;
-        }
-
-
-        /* ========HEADER CUSTOMIZE======== */
-        #header h1 {
-        margin:0;
-        padding:10px;
-        font-size:24px;
-        }
-
-        #header h1 a {
-        color:#333;
-        }
-
-
-        /* ========MAIN CONTENTS CUSTOMIZE======== */
-        #main h2 {
-        margin-bottom:5px;
-        padding:5px 0;
-        font-size:16px;
-        border-bottom:3px double #ccc;
-        }
-
-        #main h3 {
-        margin-bottom:5px;
-        padding:5px;
-        font-size:14px;
-        border-left:5px solid #0089a1;
-        border-bottom:1px dotted #ccc;
-        }
-
-        #main h4 {
-        margin-bottom:5px;
-        padding:5px;
-        font-size:13px;
-        color:#fff;
-        background:#0089a1;
-        }
-
-        #main h5 {
-        margin-bottom:5px;
-        font-size:13px;
-        border-bottom:1px dotted #ccc;
-        }
-
-        #main h6 {
-        margin-bottom:5px;
-        font-size:13px;
-        }
-
-
-        #main p {
-        margin:0 0 1em 0;
-        }
-
-
-        /* INFORMATION CUSTOMIZE */
-        * html body #main dl.information dd div {
-        display:inline-block;
-        }
-
-        #main table {
-        width:100%;
-        border-collapse:collapse;
-        }
-
-        #main table th {
-        padding:5px;
-        font-size:12px;
-        text-align:left;
-        border:1px solid #aaa;
-        background:#f0f7fc;
-        }
-
-        #main table td {
-        padding:5px;
-        font-size:12px;
-        text-align:left;
-        border:1px solid #aaa;
-        }
-    </style>
-
-    <title>デモ用アプリ</title>
-    </head>
-    <body>
-        <div id="top">
-            <div id="header">
-                <h1>hogehoge株式会社</h1>
-            </div>
-        <div id="contents">
-            <div id="main" style="width: 760px;">
-              <h2>デモ用アプリ</h2>
-              <p>ここにこのサンプルコードの説明を記載してださい。</p>
-              <h4>店舗売上データ一覧</h4>
-                <table id="table1"  border="1" cellpadding="10">
-                    <tr>
-                        <th>店舗コード</th>
-                        <th>品目</th>
-                        <th>金額(円)</th>
-                    </tr>
-                </table>
-                <div style="padding-top: 10px;">
-                    <h5>↓入力フィールド</h5>
-                    <input name="table1_cell_value" id="th_value1" type="text" placeholder="店舗コード">
-                    <input name="table1_cell_value" id="th_value2" type="text" placeholder="品目">
-                    <input name="table1_cell_value" id="th_value3" type="text" placeholder="金額(円)">
-                    <input type="button" value="行を追加" onclick="add_line()">
-                    <b><a id="download" href="#" download="test.csv" onclick="handleDownload()">csvファイルダウンロード</a></b>
-                </div>
-            </div>
-        </div>
 
   <script>
     //ここから表の行追加のコード
@@ -449,6 +1772,139 @@
 
         delete data_csv;//data_csvオブジェクトはもういらないので消去してメモリを開放
     }
+
+    function shiftDownload(){
+      var bom = new Uint8Array([0xEF, 0xBB, 0xBF]);
+      var table = document.getElementById('tablea');
+      var tableb = document.getElementById('tableb');
+      var tablec = document.getElementById('tablec');
+      var tabled = document.getElementById('tabled');
+      var data_csv="";
+      var user_name = document.getElementById('username');
+
+      data_csv += "\n";
+      data_csv += user_name.innerText;
+      data_csv +="\n";
+      data_csv +="\n";
+
+
+     
+
+/*
+      for(var i = 0;  i < table.rows.length; i++){
+          for(var j = 0; j < table.rows[i].cells.length; j++){
+            data_csv += table.rows[i].cells[j].innerText;//HTML中の表のセル値をdata_csvに格納
+            if(j == table.rows[i].cells.length-1) data_csv += "\n";//行終わりに改行コードを追加
+            else data_csv += ",";//セル値の区切り文字として,を追加
+          }
+        }
+        */
+
+        for(var i = 0; i < 9; i++){
+          for(var j = 0; j < 11; j++){
+
+            if(i == 0){
+              if(j == 0) data_csv +=",";
+
+              if(j < 6) data_csv += table.rows[i].cells[j].innerText;
+              else {
+                data_csv += tableb.rows[i].cells[j-5].innerText;
+              }
+
+              if (j == 10) data_csv += "\n";
+              else data_csv += ",";
+            }
+
+            else if (j == 0){
+              //data_csv += table.rows[i].cells[j].innerText;
+             
+              if(i==1) data_csv += "8:20~9:30"
+              else if(i==2) data_csv += "9:40~10:50";
+              else if(i==3) data_csv += "11:00~12:10";
+              else if(i==4) data_csv += "12:20~13:10";
+              else if(i==5) data_csv += "14:10~15:20";
+              else if(i==6) data_csv += "15:30~16:40";
+              else if(i==7) data_csv += "16:50~18:00";
+              else if(i==8) data_csv += "18:10~19:20";
+              data_csv += ",";
+              data_csv += ",";
+             
+            }
+
+          
+            else{
+              var num = "target" + i + j;
+              //var element = document.getElementById("target");
+              var element = document.getElementById(num);
+              var a = element.value;
+              data_csv += a;
+              if(j == 10) data_csv += "\n";
+              else data_csv += ",";
+            }
+          }
+        }
+
+        data_csv += "\n";
+        data_csv += "\n";
+        data_csv += "\n";
+
+        for(var i = 0; i < 9; i++){
+          for(var j = 0; j < 9; j++){
+            if(i == 0){
+
+              if(j==0) data_csv +=",";
+
+
+              if(j < 6)data_csv += tablec.rows[i].cells[j].innerText;
+              else data_csv += tabled.rows[i].cells[j-5].innerText;
+
+              if(j == 8) data_csv += "\n";
+              else data_csv += ",";
+            }
+
+            else if (j == 0){
+
+
+              if(i==1) data_csv += "8:20~9:30"
+              else if(i==2) data_csv += "9:40~10:50";
+              else if(i==3) data_csv += "11:00~12:10";
+              else if(i==4) data_csv += "12:20~13:10";
+              else if(i==5) data_csv += "14:10~15:20";
+              else if(i==6) data_csv += "15:30~16:40";
+              else if(i==7) data_csv += "16:50~18:00";
+              else if(i==8) data_csv += "18:10~19:20";
+              data_csv += ",";
+              data_csv += ",";
+            }
+
+            else{
+              var num = "targets" + i + j;
+              var element = document.getElementById(num);
+              var a = element.value;
+              data_csv += a;
+
+              if(j == 8) data_csv += "\n";
+              else data_csv += ",";
+
+            }
+          }
+        }
+        
+
+
+        var blob = new Blob([ bom, data_csv], { "type" : "text/csv" });//data_csvのデータをcsvとしてダウンロードする関数
+        if (window.navigator.msSaveBlob) { //IEの場合の処理
+            window.navigator.msSaveBlob(blob, "shift.csv"); 
+            //window.navigator.msSaveOrOpenBlob(blob, "test.csv");// msSaveOrOpenBlobの場合はファイルを保存せずに開ける
+        } else {
+            document.getElementById("download").href = window.URL.createObjectURL(blob);
+        }
+
+        delete data_csv;//data_csvオブジェクトはもういらないので消去してメモリを開放
+
+
+    }
+
     //ここまでCSV出力＆ダウンロード
 </script>
   </body>
